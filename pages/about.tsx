@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar"
+import Browser from "@/components/Browser"
 
 const about = () => {
   return (
-    <div>
+    <div className="">
+      <Browser />
       <Navbar />
     </div>
   )
