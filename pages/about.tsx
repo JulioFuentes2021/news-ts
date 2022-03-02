@@ -1,11 +1,9 @@
-export const APP_VERSION = "v1.0.0"
-
-import React from "react"
+import Navbar from "@/components/Navbar"
 
 const about = () => {
   return (
     <div>
-      <li>kjajajjajaaj</li>
+      <Navbar />
     </div>
   )
 }
