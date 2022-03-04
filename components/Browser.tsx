@@ -1,8 +1,13 @@
-import SearchIcon from "@mui/icons-material/Search"
+import SearchIconComponent from "./SearchIcon"
+import { useContext, useEffect } from "react"
+import { newsContext } from "context/store"
 
 const Browser = () => {
+  const showM = useContext(newsContext)
+  const { show, num, setShow } = showM
+
   return (
-    <div className="flex justify-center py-4">
+    <div className="flex justify-center py-4 bg-white relative z-10">
       <div className="w-3/4 flex justify-between lg:justify-center items-center">
         <div className="text-2xl md:text-3xl lg:text-4xl font-bold">
           <strong className="text-blue-800">Your</strong>
@@ -11,7 +16,7 @@ const Browser = () => {
           </strong>
         </div>
         <div className="text-2xl md:text-3xl lg:text-4xl lg:hidden">
-          <SearchIcon />
+          <SearchIconComponent />
         </div>
       </div>
     </div>
