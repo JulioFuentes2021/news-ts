@@ -16,7 +16,7 @@ const SearchIconComponent = () => {
     <div className="flex flex-col items-end w-full">
       <SearchIcon
         onClick={handleSearch}
-        className="relative z-20 cursor-pointer"
+        className="relative z-20 cursor-pointer hover:text-blue-400"
       />
       <FloatSearch show={show} setShow={setShow} />
     </div>
