@@ -1,10 +1,11 @@
 import Navbar from "@/components/Navbar"
 import Browser from "@/components/Browser"
-import SearchIcon from "@/components/SearchIcon"
+import SocialMedias from "@/components/SocialMedias"
 
 const about = () => {
   return (
     <div className="">
+      <SocialMedias />
       <Browser />
       <Navbar />
     </div>
