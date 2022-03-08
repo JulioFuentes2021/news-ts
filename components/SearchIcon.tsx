@@ -9,14 +9,13 @@ const SearchIconComponent = () => {
 
   const handleSearch = () => {
     setShow(!show)
-    console.log(show)
   }
 
   return (
     <div className="flex flex-col items-end w-full">
       <SearchIcon
         onClick={handleSearch}
-        className="relative z-20 cursor-pointer hover:text-blue-400"
+        className="cursor-pointer hover:text-blue-400"
       />
       <FloatSearch show={show} setShow={setShow} />
     </div>

@@ -1,13 +1,11 @@
-import Navbar from "@/components/Navbar"
-import Browser from "@/components/Browser"
-import SocialMedias from "@/components/SocialMedias"
+import Header from "@/components/Header"
 
 const about = () => {
   return (
-    <div className="">
-      <SocialMedias />
-      <Browser />
-      <Navbar />
+    <div className="h-screen">
+      <Header />
+      <div className="w-screen h-screen">Div1</div>
+      <div className="w-screen h-screen">Div2</div>
     </div>
   )
 }

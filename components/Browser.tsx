@@ -7,7 +7,7 @@ const Browser = () => {
   const { show, num, setShow } = showM
 
   return (
-    <div className="flex justify-center py-4 bg-white relative z-10">
+    <div className="flex justify-center py-4 bg-white">
       <div className="w-3/4 flex justify-between lg:justify-center items-center">
         <div className="text-2xl md:text-3xl lg:text-4xl font-bold">
           <strong className="text-blue-800">Your</strong>

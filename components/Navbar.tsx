@@ -6,13 +6,14 @@ import SearchIconComponent from "./SearchIcon"
 
 const Navbar = () => {
   const showM = useContext(newsContext)
-  const { show } = showM
+  const { show, visible } = showM
 
   return (
+    //!h-12
     <nav
-      className={` ${
-        !show && "z-20"
-      } flex items-center justify-between relative h-12 bg-blue-800 text-white`}
+      className={` ${!show ? "z-20" : "z-999"} ${
+        visible ? "bg-white shadow-md text-black" : "bg-blue-800 text-white"
+      } flex items-center h-12 justify-between relative`}
     >
       <ul>
         <li className="mx-4 hidden lg:block">
