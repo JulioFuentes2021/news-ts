@@ -4,8 +4,8 @@ const about = () => {
   return (
     <div className="h-screen">
       <Header />
-      <div className="w-screen h-screen">Div1</div>
-      <div className="w-screen h-screen">Div2</div>
+      <div className="h-screen">Div1</div>
+      <div className="h-screen">Div2</div>
     </div>
   )
 }
