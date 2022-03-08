@@ -11,13 +11,13 @@ const Index = () => {
 
   return (
     <div className="flex flex-col">
-      <div className={`${visible && "absolute"}`}>
+      <div className={`${!visible && "absolute"}`}>
         <SocialMedias />
       </div>
-      <div className={`${visible && "order-2 m-24"}`}>
+      <div className={`${!visible && "order-2 m-24"}`}>
         <Browser />
       </div>
-      <div className={`${visible && "order-1 fixed w-full"}`}>
+      <div className={`${!visible && "order-1 fixed w-full"}`}>
         <Navbar />
       </div>
     </div>

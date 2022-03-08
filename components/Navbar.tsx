@@ -12,7 +12,7 @@ const Navbar = () => {
     //!h-12
     <nav
       className={` ${!show ? "z-20" : "z-999"} ${
-        visible ? "bg-white shadow-md text-black" : "bg-blue-800 text-white"
+        !visible ? "bg-white shadow-md text-black" : "bg-blue-800 text-white"
       } flex items-center h-12 justify-between relative`}
     >
       <ul>
