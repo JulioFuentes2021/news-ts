@@ -22,13 +22,13 @@ const FloatSearch = ({
   }
 
   return (
-    <div className={`overflow-hidden absolute top-8`}>
-      <div
-        className={`${
-          !show ? "-translate-y-full invisible" : "visible"
-        } transition-translate ease duration-1000 flex justify-center w-80 h-16`}
-      >
-        <div className="w-80 flex justify-end items-center">
+    <div
+      className={`${
+        !show ? "h-0" : "h-16"
+      } overflow-hidden bg-gray-100 transition-height ease-in-out duration-1000 flex items-center relative z-50`}
+    >
+      <div className={`flex justify-center h-16 p-3`}>
+        <div className=" flex justify-end items-center">
           <div className="flex items-center">
             <input
               className="text-black focus:outline focus:outline-blue-800 placeholder:italic placeholder:text-black placeholder:px-2 placeholder:font-semibold px-2 text-sm h-10 focus:outline-1 border-none"

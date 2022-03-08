@@ -17,7 +17,9 @@ const SearchIconComponent = () => {
         onClick={handleSearch}
         className="cursor-pointer hover:text-blue-400"
       />
-      <FloatSearch show={show} setShow={setShow} />
+      <div className="absolute mt-8">
+        <FloatSearch show={show} setShow={setShow} />
+      </div>
     </div>
   )
 }
