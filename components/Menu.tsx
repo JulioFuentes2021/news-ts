@@ -16,7 +16,7 @@ const Menu = ({
   return (
     <div
       className={`${
-        floatMenu && "translate-x-0"
+        floatMenu && "-translate-x-px"
       } -translate-x-full transition-translate ease duration-1000 w-60 md:w-1/3 overflow-y-auto overflow-x-hidden fixed top-0 bg-blue-800 h-screen flex flex-col items-center`}
     >
       <div className="w-full flex justify-end">
