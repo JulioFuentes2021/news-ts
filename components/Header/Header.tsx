@@ -1,5 +1,5 @@
 import { Store } from "context/store"
-import Index from "./Index"
+import Index from "./index"
 
 const Header = () => {
   return (
