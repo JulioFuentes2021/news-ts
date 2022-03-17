@@ -22,7 +22,7 @@ const Index = () => {
       <div className={`${!visible && "order-2 m-24"}`}>
         <Browser />
       </div>
-      <div className={`${!visible && "order-1 fixed w-full"}`}>
+      <div className={`${!visible && "order-1 fixed z-10 w-full"}`}>
         <Navbar floatMenu={floatMenu} setFloatMenu={setFloatMenu} />
       </div>
     </div>
